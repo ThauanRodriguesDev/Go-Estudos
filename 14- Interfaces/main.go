@@ -10,7 +10,7 @@ type Endereço struct {
 }
 
 type Pessoa interface {
-	Desativar()
+	Desativar() // O Go so permite passar metodos em interfaces
 }
 
 type Cliente struct {
@@ -38,11 +38,11 @@ func Desativacao(pessoa Pessoa) {
 
 func main() {
 
-	thauan := Cliente{
-		Nome:  "Thauan",
-		Idade: 30,
-		Ativo: true,
-	}
+	// thauan := Cliente{
+	// 	Nome:  "Thauan",
+	// 	Idade: 30,
+	// 	Ativo: true,
+	// }
 	minhaEmpresa := Empresa{}
 
 	Desativacao(minhaEmpresa)
