@@ -6,8 +6,8 @@ type Client struct {
 	nome string
 }
 
-func NewClient() *Client {
-	return &Client{nome: ""}
+func NewClient(nome string) *Client {
+	return &Client{nome: nome}
 }
 func (c *Client) andou() {
 	c.nome = "Thauan Rodrigues"
